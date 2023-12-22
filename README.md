@@ -7,3 +7,4 @@ orden de prioridad de desarrollo
 5 explain data battles
 6 calculator refinamiento
 7 very soon
+son todo putos
