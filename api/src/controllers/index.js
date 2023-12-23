@@ -1,7 +1,7 @@
 const { default: axios } = require('axios');
 
-const dataPlayer = async () => {
-    let url = `https://gameinfo.albiononline.com/api/gameinfo/search?q=Lauty5421`;
+const dataPlayer = async (name) => {
+    let url = `https://gameinfo.albiononline.com/api/gameinfo/search?q=${name}`;
     try {
         const respuesta = await axios.get(url)
         const jugadoresExistentes = respuesta.data.players.filter(
