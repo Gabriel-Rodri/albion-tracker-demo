@@ -3,7 +3,7 @@ import {
 } from '../actions'
 
 const initialState = {
-    allVideogames : [],
+    Player : [],
 
 }
 
@@ -12,8 +12,10 @@ function rootReducer(state = initialState, action) {
         case GET_NAMES: //para mi searchbar
             return {
                 ...state,
-                allVideogames: action.payload
+                Player: action.payload
             };
+            default:
+                return state;
     }
 }
 

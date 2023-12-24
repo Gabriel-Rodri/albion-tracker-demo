@@ -4,8 +4,9 @@ const { dataPlayer } = require('../controllers');
 
 const router = Router();
 
-router.get('/dataPlayer', async (req, res, next) => {
+router.get('/', async (req, res, next) => {
     const { name } = req.query;
+    console.log(name)
 
     if (name) {
         try {

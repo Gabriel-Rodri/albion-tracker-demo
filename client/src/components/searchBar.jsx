@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useDispatch } from 'react-redux';
 import { getNames } from '../redux/actions'
+import "../styles/searchBar.css"
 
 
 
@@ -26,10 +27,10 @@ export default function SearchBar () {
 
     
     return(
-        <div className="a">
+        <div className="formato">
             <form onSubmit={e => handleSubmit(e)}>
                 <div className="a">
-                    <span htmlFor="name"></span>
+                    <span htmlFor=""></span>
                     <input 
                         type='text'
                         id="name"
@@ -38,7 +39,7 @@ export default function SearchBar () {
                         placeholder='Search...'
                         onChange={e => handleChange(e)}
                     />
-                    <button type="submit" className="a">Search</button>
+                    <button type="submit" className="submit">Search</button>
                 </div>
             </form>
         </div>
